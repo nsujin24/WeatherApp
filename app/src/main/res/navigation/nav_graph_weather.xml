@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph_weather"
+    app:startDestination="@id/weatherListFragment">
+
+    <fragment
+        android:id="@+id/weatherListFragment"
+        android:name="com.sujin.weatherapp.ui.fragments.WeatherListFragment"
+        android:label="WeatherListFragment">
+
+        <action
+            android:id="@+id/action_list_to_details"
+            app:destination="@id/weatherDetailsFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/weatherDetailsFragment"
+        android:name="com.sujin.weatherapp.ui.fragments.WeatherDetailsFragment"
+        android:label="WeatherDetailsFragment" />
+
+</navigation>
